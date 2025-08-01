@@ -1,0 +1,12 @@
+<div class="table">   
+    <div class="row">
+        <div class="column"><b>Customer List</b></div>
+        <div class="column">
+            <ul>
+            @for (item of this.list; track item.id) {    
+                <li class="user-badge">[{{item.id}}] {{item.name}} | {{item.status}}</li>  
+            }
+            </ul>   
+        </div>      
+    </div>      
+</div>   

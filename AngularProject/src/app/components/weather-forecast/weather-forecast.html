@@ -1,0 +1,12 @@
+<div class="table">   
+    <div class="row">
+        <div class="column"><b>Weather Forecast</b></div>
+        <div class="column">
+            <ul>
+            @for (item of this.list; track item.date) {    
+                <li class="user-badge">{{item.date}} | {{item.summary}} | {{item.temperatureC}} C</li>  
+            }
+            </ul>   
+        </div>      
+    </div>      
+</div>   
